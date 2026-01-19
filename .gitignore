@@ -1,0 +1,47 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.tmp
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- Data ----
+data/
+datasets/
+*.zip
+
+# ---- Outputs ----
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# You can keep your result images if needed:
+# !ewc_results.png
+# !lambda_sweep.png
+# !ewc_5tasks_heatmap.png
+# !ewc_3tasks_curves.png
+
+# ---- Cache / others ----
+*.cache
+*.pt
+*.pth
