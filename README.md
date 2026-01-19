@@ -34,12 +34,15 @@ ewc-demo/
 ============= Installation =============
 
 1. Créer un environnement virtuel
+
 python -m venv .venv
 
-2. Activer l’environnement
+3. Activer l’environnement
+
 source venv\Scripts\activate
 
-3. Installer les dépendances
+5. Installer les dépendances
+
 pip install -r requirements.txt
 
 ============= 1. Expérience principale : EWC sur deux ou trois tâches =============
