@@ -17,19 +17,31 @@ Le projet comprend :
 - une extension expérimentale (effet du paramètre lambda)
 
 📦 Structure du repository
+
 ewc-demo/
+
 │
 
 ├── ewc_mnist.py              # Expériences principales : 2 tâches et 3 tâches
+
 ├── ewc_lambda_sweep.py       # Extension originale : étude systématique du paramètre lambda
+
 ├── ewc_5tasks_demo.py        # Apprentissage séquentiel long (5 tâches)
+
 │
+
 ├── ewc_results.png           # Résultats visuels pour 2 tâches
+
 ├── ewc_3tasks_curves.png     # Courbes d’évolution pour 3 tâches
+
 ├── ewc_5tasks_heatmap.png    # Heatmap complète pour 5 tâches
+
 ├── lambda_sweep.png          # Courbes d’évolution pour 3 tâches en fonction de lambda
+
 │
+
 ├── requirements.txt
+
 └── README.md
 
 ============= Installation =============
