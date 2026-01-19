@@ -36,10 +36,10 @@ datasets/
 *.gif
 
 # You can keep your result images if needed:
-# !ewc_results.png
-# !lambda_sweep.png
-# !ewc_5tasks_heatmap.png
-# !ewc_3tasks_curves.png
+!ewc_results.png
+!lambda_sweep.png
+!ewc_5tasks_heatmap.png
+!ewc_3tasks_curves.png
 
 # ---- Cache / others ----
 *.cache
