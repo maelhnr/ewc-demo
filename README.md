@@ -19,6 +19,7 @@ Le projet comprend :
 📦 Structure du repository
 ewc-demo/
 │
+
 ├── ewc_mnist.py              # Expériences principales : 2 tâches et 3 tâches
 ├── ewc_lambda_sweep.py       # Extension originale : étude systématique du paramètre lambda
 ├── ewc_5tasks_demo.py        # Apprentissage séquentiel long (5 tâches)
@@ -35,15 +36,15 @@ ewc-demo/
 
 1. Créer un environnement virtuel
 
-python -m venv .venv
+    python -m venv .venv
 
-3. Activer l’environnement
+2. Activer l’environnement
 
-source venv\Scripts\activate
+    source venv\Scripts\activate
 
-5. Installer les dépendances
+3. Installer les dépendances
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ============= 1. Expérience principale : EWC sur deux ou trois tâches =============
 
