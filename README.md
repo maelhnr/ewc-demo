@@ -2,6 +2,7 @@ README - Elastic Weight Consolidation (EWC) Demo
 
 ============= Objectif du projet =============
 
+
 Ce projet a été réalisé dans le cadre de l’évaluation du cours de Deep Learning 2025–2026 (ISAE-Supaero).
 L’objectif est de :
 
@@ -44,7 +45,9 @@ ewc-demo/
 
 └── README.md
 
+
 ============= Installation =============
+
 
 1. Créer un environnement virtuel
 
@@ -57,8 +60,10 @@ ewc-demo/
 3. Installer les dépendances
 
     pip install -r requirements.txt
+   
 
 ============= 1. Expérience principale : EWC sur deux ou trois tâches =============
+
 
 Le fichier ewc_mnist.py permet d’exécuter :
 
@@ -96,7 +101,9 @@ run_3tasks(...)
 Et exécuter :
 python ewc_mnist.py
 
+
 ============= 2. Simulation avancée : apprentissage long sur 5 tâches =============
+
 
 Le fichier ewc_5tasks_demo.py montre comment EWC se comporte dans un contexte plus réaliste de continual learning avec :
 
@@ -133,6 +140,7 @@ python ewc_lambda_sweep.py
 
 
 ============= Résumé pédagogique =============
+
 
 1. L’oubli catastrophique
 
@@ -174,7 +182,9 @@ Extension : sweep de lambda
 - lambda très fort → modèle trop rigide
 
 
+
 ============= Référence scientifique =============
+
 
 Kirkpatrick et al. (2017). Overcoming Catastrophic Forgetting in Neural Networks.
 Proceedings of the National Academy of Sciences (PNAS).
