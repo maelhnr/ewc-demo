@@ -96,22 +96,7 @@ run_3tasks(...)
 Et exécuter :
 python ewc_mnist.py
 
-============= 2. Extension originale : étude du paramètre lambda =============
-
-Le fichier ewc_lambda_sweep.py explore plusieurs valeurs de lambda :
-
-lambda ∈ {0, 10, 100, 300, 1000, 3000}
-
-Pour chaque lambda, le modèle apprend successivement : A → B → C
-
-Et on mesure : accuracy sur A, accuracy sur B et accuracy sur C.
-
-Le script génère le graphique lambda_sweep.png, montrant l’impact du lambda sur la stabilité et la plasticité du modèle.
-
-▶️ Lancer l’expérience
-python ewc_lambda_sweep.py
-
-============= 3. Simulation avancée : apprentissage long sur 5 tâches =============
+============= 2. Simulation avancée : apprentissage long sur 5 tâches =============
 
 Le fichier ewc_5tasks_demo.py montre comment EWC se comporte dans un contexte plus réaliste de continual learning avec :
 
@@ -129,6 +114,23 @@ Cette heatmap montre un oubli cumulatif très fort dans le modèle naïf et une 
 
 ▶️ Lancer l’expérience
 python ewc_5tasks_demo.py
+
+============= 3. Extension originale : étude du paramètre lambda =============
+
+Le fichier ewc_lambda_sweep.py explore plusieurs valeurs de lambda :
+
+lambda ∈ {0, 10, 100, 300, 1000, 3000}
+
+Pour chaque lambda, le modèle apprend successivement : A → B → C
+
+Et on mesure : accuracy sur A, accuracy sur B et accuracy sur C.
+
+Le script génère le graphique lambda_sweep.png, montrant l’impact du lambda sur la stabilité et la plasticité du modèle.
+
+▶️ Lancer l’expérience
+python ewc_lambda_sweep.py
+
+
 
 ============= Résumé pédagogique =============
 
@@ -149,22 +151,30 @@ Cela force le réseau à conserver les paramètres critiques pour les anciennes 
 
 Expérience 2 tâches
 
-- modèle naïf : perte sévère sur la tâche A
-- modèle EWC : protection très forte de la performance
+- modèle naïf : perte sévère sur la tâche A (97.20% → 78.35%)
+- modèle EWC : protection très forte de la performance (A : 97.20% → 96.26%)
 
 Expérience 3 tâches
 
-- mise en évidence du compromis stabilité-plasticité
-- meilleure compréhension du rôle de lambda
-
-Extension : sweep de lambda
-
-- lambda trop faible → oubli important
-- lambda intermédiaire (300–1000) → compromis optimal
-- lambda très fort → modèle trop rigide
+- modèle naïf : perte cumulative sur la tâche A (96.32% → 91.57% → 77.87%)
+- EWC : protection très forte de la performance (A : 96.52% → 95.51% → 92.83%)
 
 Expérience 5 tâches
 
 - modèle naïf → effondrement cumulatif (T1 tombe à 35%)
 - EWC → toutes les tâches restent autour de 93–96%
 - démonstration claire de continual learning stabilisé
+
+  
+Extension : sweep de lambda
+
+- mise en évidence du compromis stabilité-plasticité
+- lambda trop faible → oubli important
+- lambda intermédiaire (300–1000) → compromis optimal
+- lambda très fort → modèle trop rigide
+
+
+============= Référence scientifique =============
+
+Kirkpatrick et al. (2017). Overcoming Catastrophic Forgetting in Neural Networks.
+Proceedings of the National Academy of Sciences (PNAS).
